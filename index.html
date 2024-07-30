@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Chat App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div id="login-area">
+        <div class="login-container">
+            <h1>Welcome to Chat App</h1>
+            <p>Please enter your username to join the chat.</p>
+            <form id="login-form">
+                <input type="text" id="username-input" placeholder="Enter username" required>
+                <button type="button" id="join-chat">Join Chat</button>
+            </form>
+        </div>
+    </div>
+    <div id="chat-area" class="hidden">
+        <div id="users-list">
+            <h3>Online Users</h3>
+            <ul id="users"></ul>
+            <button id="change-username">Change Username</button>
+        </div>
+        <div id="chat-container">
+            <div id="chat-messages"></div>
+            <div id="typing-indicator"></div>
+            <div id="message-input-area">
+                <div id="formatting-buttons">
+                    <button id="bold-button" class="format-btn">B</button>
+                    <button id="italic-button" class="format-btn">I</button>
+                    <button id="code-button" class="format-btn">Code</button>
+                </div>
+                <div id="input-wrapper">
+                    <input type="text" id="message-input" placeholder="Type a message">
+                    <button id="send-message">Send</button>
+                    <button id="emoji-button">😊</button>
+                    <button id="notification-toggle"><i class="fas fa-bell"></i></button>
+                </div>
+                <div id="emoji-picker" class="hidden">
+                    <div class="emoji-grid"></div>
+                </div>
+            </div>
+        </div>
+        <div id="private-chat-area" class="hidden">
+            <h3 id="private-chat-header">Private Chat with <span id="private-chat-partner"></span></h3>
+            <div id="private-chat-messages"></div>
+            <div id="private-typing-indicator"></div>
+            <div id="private-message-input-area">
+                <input type="text" id="private-message-input" placeholder="Type a private message">
+                <button id="send-private-message">Send</button>
+            </div>
+            <button id="back-to-public">Back to Public Chat</button>
+        </div>
+    </div>
+    <audio id="notification-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-positive-notification-951.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
