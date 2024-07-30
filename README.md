@@ -10,8 +10,8 @@ This project is a real-time chat application built with plain JavaScript, HTML, 
 3. Private chat: Users can initiate private chats with other online users.
 4. Message Formatting: Users can format their messages with bold, Italic, and code style.
 5. Emoji Support: Users can add emojis to their messages.
-6. Typing Indicator: The application shows when other users are typing.
-7. Notifications: Users recieved notifications when a private message is sent to them.
+6. Message Recieving Indicator: The application Sounds arlam when message recieved (Allows user to turn off notification).
+8. Notifications: Users recieved notifications when a private message is sent to them.
 
 
 ## Technology stack 
