@@ -46,7 +46,7 @@ The `style.css` file contains the styling for the chat application, ensuring a c
 
 
 ## JavaScript 
-The `scropt.js` file handles the login for the chat application,including user authentication, message handling, and private chat functionality.
+The `script.js` file handles the login for the chat application,including user authentication, message handling, and private chat functionality.
 
 ## Future Improvements
 - WebSocket Intergration: Implement WebSocket for real-time communication.
